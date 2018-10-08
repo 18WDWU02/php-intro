@@ -10,29 +10,52 @@
     can use as many lines as we want
 */
 
+/*
+    Varibales in PHP are very similar to JS. One of the main differences is that they don't need to be declared at first.
+    With variables, there are some rules. The variable name can't be a number and and they have to either start with a
+    letter or a underscore.
+*/
 $hello = "Hello World";
 $_hello = "hello with underscore";
 
 $number = 10;
 $boolean = false;
-
+/*
+    Things like arrays act the same way as in js but are just worded differently.
+*/
 $array = array(10,20,30,40);
 
+
+/*
+    Echo and print are two ways which you can view variables onto the screen.
+    They also both have two different ways of writing them.
+*/
 // echo "Hello";
 // echo("Hello with Brackets");
 // echo $_hello;
 // print("This is using Print");
 // print "this is from print with no brackets";
-//
+
+/*
+    var_dump is a method to output a variable as a whole and also see the type.
+    This is a development tool like console.log so you dont want to use this one in production
+*/
 // var_dump("This is from a Var Dump");
 // var_dump($array);
 
+/*
+    Die is like the previous methods, but if it gets triggered then nothing after it will run
+*/
 // die("this is from a die");
 
 $list = array("apples", "bannanas", "pears");
 
 ?>
 
+
+<!--
+    PHP can be interlaced with HTML. Bellow there are multiple ways in which you can add php into your html.
+-->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -51,7 +74,10 @@ $list = array("apples", "bannanas", "pears");
 
 
 
-
+        <!--
+            Functions like if, else, for, foreach can also be used in php, they are just written slightly diferently.
+            Bellow there are two ways you can do a foreach loop as well as an if else statement
+        -->
         <ul>
             <?php
                 foreach ($list as $listItem) {
